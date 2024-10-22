@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.png" />
+    <title>CALCULADORA</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" disabled />
+      <!--Disabled evita que el usuario pueda ingresar manualmente los numoeros y operaciones-->
+
+      <div class="buttons">
+        <button onclick="operacion('-')">-</button>
+        <button onclick="numero('7')">7</button>
+        <button onclick="numero('8')">8</button>
+        <button onclick="numero('9')">9</button>
+        <button onclick="operacion('/')">/</button>
+        <button onclick="numero('4')">4</button>
+        <button onclick="numero('5')">5</button>
+        <button onclick="numero('6')">6</button>
+        <button onclick="operacion('*')">*</button>
+        <button onclick="numero('1')">1</button>
+        <button onclick="numero('2')">2</button>
+        <button onclick="numero('3')">3</button>
+        <button onclick="operacion('+')">+</button>
+        <button onclick="borrar()">C</button>
+        <button onclick="numero('0')">0</button>
+        <button onclick="resultado()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2024 Samuel Andrade Lopez, Ing. Software Cuarto Semestre</p>
+      <p>Docente = Jose Nicolas Aristizabal Ramirez</p>
+      <p>CIAF</p>
+    </footer>
+  </body>
+</html>
